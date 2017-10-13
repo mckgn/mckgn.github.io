@@ -1,0 +1,63 @@
+/* RED:   #E70B41 | rgba(231,11,65,1) */
+/* WHITE: #FFFFFF | rgba(255,255,255,1) */
+/* BLACK: #1C1B1A | rgba(28,27,26,1) */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.navbar-lob {
+    background: #FFFFFF;
+    background: rgba(255,255,255,1);
+    font-family: 'Oswald', serif;
+    font-weight: 300;
+    color: #1C1B1A;
+    color: rgba(28,27,26,1);
+    height: 50px;
+    border: 0;
+    font-size: 20px;
+    z-index: 10;
+    -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+    animation-delay: 3s;
+    margin-top: 25px;
+}
+
+.navbar-brand {
+    height: 100px;
+    padding: 0;
+    margin-top: -25px;
+}
+
+.navbar-brand  img {
+    height: 100px;
+    margin: 0;
+}
+
+.navbar-logo {
+    content:url("../img/logo_sm.png");
+    -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
+    animation-delay: 4s;
+}
+
+.navbar-nav > li > a, a:visited, a:active {
+  margin-top: 0;
+  margin-bottom: 25px;
+  height: 50px;
+  padding-top: 15px !important;
+  padding-bottom: 0 !important;
+  color: #1C1B1A;
+  color: rgba(28,27,26,1);
+  font-size: 30px;
+  font-family: 'Open Sans Condensed';
+}
+
+.navbar-nav > li > a:hover {
+    color: #FFFFFF;
+    color: rgba(255,255,255,1);
+    background: #E70B41;
+    background: rgba(231,11,65,1);
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png?v=2">
+    <link rel="stylesheet" href="css/preload.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lob.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/animated.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/pesticide.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous" async defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async defer></script>
+    <script type="text/javascript">
+        $(window).on('load', function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+          });
+    </script>
+    <script src="js/wow.min.js" async defer></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script type="text/javascript">
+    function scroll_to_div(div_id)
+    {
+     $('html,body').animate(
+     {
+      scrollTop: $("#"+div_id).offset().top
+     },
+     'slow');
+    }
+    </script>
+    <title>Lobstars</title>
+  </head>
+  <body class="animated fadeIn">
+    <div id="preloader">
+	     <div id="status">&nbsp;</div>
+    </div>
+    <nav class="navbar navbar-fixed-top navbar-lob animated slideInDown">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#me" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#TOP"><img class="navbar-logo animated fadeIn" alt="Lobstars"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav">
+            <li><a href="#roster" onclick="scroll_to_div('roster')">ROSTER</a></li>
+            <li><a href="#schedule" onclick="scroll_to_div('schedule')">SCHEDULE</a></li>
+            <li><a href="#stats" onclick="scroll_to_div('stats')">STATS</a></li>
+            <li><a href="#standings" onclick="scroll_to_div('standings')">STANDINGS</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid sec1 vertical_center">
+      <div class="row"></div>
+      <img class="center-block mainlogo animated zoomIn" src="img/logo.png" alt="logo">
+      <div class="row"></div>
+    </div>
+    <div id="roster"class="container-fluid sec2">blah blah</div>
+    <div id="schedule" class="container-fluid sec3 vertical_center">
+      <table class="table price">
+        <thead>
+          <tr>
+            <th class="col-xs-2">Date</th>
+            <th class="col-xs-2">Time</th>
+            <th class="col-xs-2">Field</th>
+            <th class="col-xs-2">Vs</th>
+            <th class="col-xs-2">Address</th>
+            <th class="col-xs-2">Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="col-xs-2">September 11, 2017</th>
+            <td class="col-xs-2">6:00 PM</td>
+            <td class="col-xs-2">Shouldice #10</td>
+            <td class="col-xs-2">Pitch Please</td>
+            <td class="col-xs-2"><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512">1515 Home Rd NW</a></td>
+            <th class="col-xs-2">W 26 - 13</th>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+          <th class="col-xs-2">September 18, 2017</th>
+          <td class="col-xs-2">6:00 PM</td>
+          <td class="col-xs-2">Shouldice #5</td>
+          <td class="col-xs-2">Tempura Batters</td>
+          <td class="col-xs-2"><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512">1515 Home Rd NW</a></td>
+          <th class="col-xs-2">L 7 - 14</th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th class="col-xs-2">September 18, 2017</th>
+          <td class="col-xs-2">7:30 PM</td>
+          <td class="col-xs-2">Shouldice #5</td>
+          <td class="col-xs-2">Draught Picks</td>
+          <td class="col-xs-2"><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512">1515 Home Rd NW</a></td>
+          <th class="col-xs-2">L 8 - 28</th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th class="col-xs-2">September 25, 2017</th>
+          <td class="col-xs-2">6:00 PM</td>
+          <td class="col-xs-2">Shouldice #5</td>
+          <td class="col-xs-2">Pitch Please</td>
+          <td class="col-xs-2"><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512">1515 Home Rd NW</a></td>
+          <th class="col-xs-2">L 15 - 24</th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th class="col-xs-2">October 16, 2017</th>
+          <td class="col-xs-2">7:30 PM</td>
+          <td class="col-xs-2">Shouldice #5</td>
+          <td class="col-xs-2">Pitch Please</td>
+          <td class="col-xs-2"><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512">1515 Home Rd NW</a></td>
+          <th class="col-xs-2"></th>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    <div id="stats" class="container-fluid sec4">blah blah</div>
+    <div id="standings" class="container-fluid sec2">blah blah</div>
+  </body>
+</html>
