@@ -2,6 +2,8 @@
 /* WHITE: #FFFFFF | rgba(255,255,255,1) */
 /* BLACK: #1C1B1A | rgba(28,27,26,1) */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
 html, body {
     height: 100%;
     width: 100%;
@@ -44,20 +46,17 @@ body {
   width: auto;
   background: #E70B41;
   background: rgba(231,11,65,1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .sec3 {
-  height: 75vh;
   width: auto;
+  min-height: 50vh;
   background: #1C1B1A;
   background: rgba(28,27,26,1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
   font-size: 15pt;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .sec3 a, .sec a:visited {
@@ -83,10 +82,7 @@ body {
   width: auto;
   background: #FFFFFF;
   background: rgba(255,255,255,1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  color: #000;
+  color: #000000;
 }
 
 .vertical_center {
