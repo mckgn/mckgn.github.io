@@ -9,7 +9,7 @@ html, body {
 
 body {
     font-family: 'Roboto';
-    font-size: 20pt;
+    font-size: 15pt;
     font-weight: 100;
     color: #FFFFFF;
     color: rgba(255,255,255,1);
@@ -20,6 +20,7 @@ body {
     height: -o-calc(100% - 75px); /* opera */
     height: -webkit-calc(100% - 75px); /* google, safari */
     height: -moz-calc(100% - 75px); /* firefox */
+    overflow: auto;
 }
 
 .mainlogo {
@@ -57,6 +58,24 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   font-size: 15pt;
+}
+
+.sec3 a, .sec a:visited {
+  color: #FFFFFF;
+  color: rgba(255,255,255,1);
+  font-family: 'Roboto';
+  font-size: 15pt;
+  text-decoration: none;
+  background: transparent;
+}
+
+.sec3 a:hover, .sec3 a:focus, .sec3 a:active {
+  color: #E70B41;
+  color: rgba(231,11,65,1);
+  font-family: 'Roboto';
+  font-size: 15pt;
+  text-decoration: none;
+  background: transparent;
 }
 
 .sec4 {
