@@ -8,6 +8,12 @@ table {
   margin: 0 auto;
 }
 
+@media (max-width: 400px) {
+  td {
+    font-size: 10pt;
+  }
+}
+
 @media (max-width: 767px)  {
 
   /* Force table to not be like tables anymore */
@@ -23,27 +29,25 @@ table {
   }
 
   tr {
-    border-bottom: 1px solid #FF00FF;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: #BBFF44;
+    color: #000;
   }
 
   td {
     /* Behave  like a "row" */
     border: 0;
     position: relative;
-    padding-left: 40%;
+    padding-left: 35%;
   }
 
   td:before {
     /* Now like a table header */
     position: absolute;
     /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
+    left: 10px;
+    width: 25%;
   }
 
   /* Label the data */
@@ -53,10 +57,4 @@ table {
   td:nth-of-type(4):before { content: "Vs"; }
   td:nth-of-type(5):before { content: "Address"; }
   td:nth-of-type(6):before { content: "Result"; }
-}
-
-@media (max-width: 300px) {
-  td {
-    font-size: 40pt;
-  }
 }
