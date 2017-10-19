@@ -1,88 +1,54 @@
-/* RED:   #E70B41 | rgba(231,11,65,1) */
-/* WHITE: #FFFFFF | rgba(255,255,255,1) */
-/* BLACK: #1C1B1A | rgba(28,27,26,1) */
+/* RED:       #C51342 | rgba(197,19,66,1) */
+/* DARK RED:	#A31938 | rgba(163,25,56,1) */
+/* WHITE:     #FFFFFF | rgba(255,255,255,1) */
+/* BLACK:     #212020 | rgba(33,32,32,1) */
+/* GREY:		  #C8C8C8 | rgba(200,200,200,1) */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
 
-html, body {
+html {
     height: 100%;
     width: 100%;
 }
 
 body {
     font-family: 'Roboto';
-    font-size: 15pt;
+    font-size: 2em;
     font-weight: 100;
     color: #FFFFFF;
     color: rgba(255,255,255,1);
-    padding: 0;
-    background: #1C1B1A;
-    background: rgba(28,27,26,1);
-    height: calc(100% - 75px);
-    height: -o-calc(100% - 75px); /* opera */
-    height: -webkit-calc(100% - 75px); /* google, safari */
-    height: -moz-calc(100% - 75px); /* firefox */
-    overflow: auto;
+    background: #212020;
+    background: rgba(33,32,32,1);
+    overflow: hidden;
 }
 
-.mainlogo {
-  max-width: 70vw;
-  max-height: 70vh;
-  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-  animation-delay: 2s;
+
+h1 {
+  font-family: 'Rock Salt';
+  font-size: 2em;
 }
 
-.sec1 {
-  height: 100vh;
-  width: auto;
-  background-image: url("../img/img_1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+h2 {
+  font-family: 'Rock Salt';
+  font-size: 1.25em;
 }
 
-.sec2 {
-  height: 75vh;
-  width: auto;
-  background: #E70B41;
-  background: rgba(231,11,65,1);
-}
-
-.sec3 {
-  width: auto;
-  min-height: 50vh;
-  background: #1C1B1A;
-  background: rgba(28,27,26,1);
-  font-size: 15pt;
-  overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.sec3 a, .sec a:visited {
-  color: #FFFFFF;
-  color: rgba(255,255,255,1);
+h4 {
   font-family: 'Roboto';
-  font-size: 15pt;
-  text-decoration: none;
-  background: transparent;
+  font-size: 1em;
+  font-weight: 100;
 }
 
-.sec3 a:hover, .sec3 a:focus, .sec3 a:active {
-  color: #E70B41;
-  color: rgba(231,11,65,1);
-  font-family: 'Roboto';
-  font-size: 15pt;
-  text-decoration: none;
-  background: transparent;
+.header {
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
-.sec4 {
-  height: 75vh;
-  width: auto;
-  background: #FFFFFF;
-  background: rgba(255,255,255,1);
-  color: #000000;
+.pad {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .vertical_center {
@@ -90,7 +56,73 @@ body {
     align-items: center;
 }
 
-.price {
-  -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
-  animation-delay: 3s;
+/* SECTION 1 (MAIN SCREEN) */
+
+#main {
+  min-height: 100vh;
+  background-image: url("../img/sec1_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 75px;
+}
+
+.mainlogo {
+  max-width: 70vw;
+  max-height: 70vh;
+}
+
+/* SECTION 2 (ROSTER) */
+
+#roster {
+  min-height: 25vh;
+  padding-bottom: 50px;
+}
+
+#roster img {
+  max-width: 50%;
+  border-radius: 50%;
+}
+
+/* SECTION 3 (SCHEDULE) */
+
+#schedule {
+  min-height: 25vh;
+  background: #C51342;
+  background: rgba(197,19,66,1);
+  padding-bottom: 50px;
+}
+
+#schedule a, #schedule .sec a:visited {
+  color: #FFFFFF;
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  background: transparent;
+}
+
+#schedule a:hover, #schedule a:focus, #schedule a:active {
+  color: #212020;
+  color: rgba(33,32,32,1);
+  text-decoration: none;
+  background: transparent;
+}
+
+/* SECTION 4 (STATS) */
+
+#stats {
+  min-height: 50vh;
+  background: #FFFFFF;
+  background: rgba(255,255,255,1);
+  padding-bottom: 50px;
+  color: #212020;
+  color: rgba(33,32,32,1);
+}
+
+/* SECTION 5 (STANDINGS) */
+
+#standings {
+  min-height: 50vh;
+  background: #C51342;
+  background: rgba(197,19,66,1);
+  padding-bottom: 50px;
 }

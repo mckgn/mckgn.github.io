@@ -1,29 +1,16 @@
-/* RED:   #E70B41 | rgba(231,11,65,1) */
-/* WHITE: #FFFFFF | rgba(255,255,255,1) */
-/* BLACK: #1C1B1A | rgba(28,27,26,1) */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
-
-* {
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important;
-}
-
 .navbar-lob {
     background: #FFFFFF;
     background: rgba(255,255,255,1);
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
-    color: #1C1B1A;
-    color: rgba(28,27,26,1);
+    color: #212020;
+    color: rgba(33,32,32,1);
     height: 50px;
     border: 0;
-    font-size: 30px;
     z-index: 10;
-    -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
-    animation-delay: 3s;
     margin-top: 25px;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .navbar-nav > li > a, .navbar-nav > li > a:visited {
@@ -32,17 +19,17 @@
   height: 50px;
   padding-top: 15px !important;
   padding-bottom: 0 !important;
-  color: #1C1B1A;
-  color: rgba(28,27,26,1);
-  font-size: 30px;
+  color: #212020;
+  color: rgba(33,32,32,1);
+  font-size: 1.5em;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li > a:active {
   color: #FFFFFF;
   color: rgba(255,255,255,1);
-  background: #E70B41;
-  background: rgba(231,11,65,1);
+  background: #C51342;
+  background: rgba(197,19,66,1);
   text-decoration: none;
 }
 
@@ -72,13 +59,13 @@
 
 .navbar-logo {
     content:url("../img/logo_sm.png");
-    -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 4s;
     animation-delay: 4s;
 }
 
 .icon-bar {
-    background: #1C1B1A;
-    background: rgba(28,27,26,1);
+    background: #212020;
+    background: rgba(33,32,32,1);
 }
 
 .navbar-toggle {
@@ -94,8 +81,8 @@
 }
 
 .navbar-toggle:hover {
-    background: #E70B41;
-    background: rgba(231,11,65,1);
+    background: #C51342;
+    background: rgba(197,19,66,1);
 }
 
 .navbar-toggle:hover .icon-bar {

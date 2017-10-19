@@ -9,17 +9,18 @@
     <link rel="shortcut icon" href="img/favicon.png?v=2">
     <title>Lobstars</title>
     <link rel="stylesheet" href="css/preload.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous" async defer></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/lob.css">
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/animated.css">
+    <!-- <link rel="stylesheet" href="css/pesticide.css"> -->
     <script type="text/javascript">
         $(window).on('load', function() { // makes sure the whole site is loaded
             $('#status').fadeOut(); // will first fade out the loading animation
@@ -27,7 +28,7 @@
             $('body').delay(350).css({'overflow':'visible'});
           });
     </script>
-    <script src="js/wow.min.js" async defer></script>
+    <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
@@ -36,7 +37,7 @@
     {
      $('html,body').animate(
      {
-      scrollTop: $("#"+div_id).offset().top
+      scrollTop: $("#"+div_id).offset().top-75
      },
      'slow');
     }
@@ -46,100 +47,269 @@
     <!-- <div id="preloader">
 	     <div id="status">&nbsp;</div>
     </div> -->
+
+    <!-- NAVIGATION BAR -->
+
     <nav class="navbar navbar-fixed-top navbar-lob animated slideInDown">
       <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#top" onclick="scroll_to_div('top')"><img class="navbar-logo animated fadeIn" alt="Lobstars"></a>
+          <a class="navbar-brand" href="#main" onclick="scroll_to_div('main')"><img class="navbar-logo animated fadeIn" alt="Lobstars"></a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="menu" class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#roster" onclick="scroll_to_div('roster')">ROSTER</a></li>
             <li><a href="#schedule" onclick="scroll_to_div('schedule')">SCHEDULE</a></li>
             <li><a href="#stats" onclick="scroll_to_div('stats')">STATS</a></li>
             <li><a href="#standings" onclick="scroll_to_div('standings')">STANDINGS</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
-    <div id="top" class="container-fluid sec1 vertical_center">
-      <div class="row"></div>
-      <img class="center-block mainlogo animated zoomIn" src="img/logo.png" alt="logo">
-      <div class="row"></div>
-    </div>
-    <div id="roster"class="container-fluid sec2">blah blah</div>
-    <div id="schedule" class="container-fluid sec3 vertical_center">
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Field</th>
-            <th>vs</th>
-            <th>Address</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>September 11, 2017</td>
-            <td>6:00 PM</td>
-            <td>Shouldice #10</td>
-            <td>Pitch Please</td>
-            <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_new">1515 Home Rd NW</a></td>
-            <td>W 26 - 13</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>September 18, 2017</td>
-            <td>6:00 PM</td>
-            <td>Shouldice #5</td>
-            <td>Tempura Batters</td>
-            <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_new">1515 Home Rd NW</a></td>
-            <td>L 7 - 14</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>September 18, 2017</td>
-            <td>7:30 PM</td>
-            <td>Shouldice #5</td>
-            <td>Draught Picks</td>
-            <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_new">1515 Home Rd NW</a></td>
-            <td>L 8 - 28</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>September 25, 2017</td>
-            <td>6:00 PM</td>
-            <td>Shouldice #5</td>
-            <td>Pitch Please</td>
-            <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_NEW">1515 Home Rd NW</a></td>
-            <td>L 15 - 24</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>October 16, 2017</td>
-            <td>7:30 PM</td>
-            <td>Shouldice #5</td>
-            <td>Pitch Please</td>
-            <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_NEW">1515 Home Rd NW</a></td>
-            <td>&nbsp;</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div id="stats" class="container-fluid sec4">blah blah</div>
-    <div id="standings" class="container-fluid sec2">blah blah</div>
+
+    <!-- SECTION 1 (MAIN SCREEN) -->
+
+    <section id="main" class="vertical_center">
+      <div class="container-fluid vertical_center">
+        <div class="row text-center">
+          <img class="mainlogo wow zoomIn" src="img/logo.png" alt="logo" data-wow-delay="0.4s">
+        </div>
+      </div>
+  </section>
+
+    <!-- SECTION 2 (ROSTER) -->
+
+    <section id="roster">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 text-center header">
+            <h1>ROSTER</h1>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-4 col-lg-2 pad">
+            <img src="img/adam.jpg" alt="moman"><br>
+            <h2>Moman</h2>
+            <h4>3B</h4>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 pad">
+            <img src="img/bruce.jpg" alt="bboy"><br>
+            <h2>BBoy</h2>
+            <h4>P</h4>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 pad">
+            <img src="img/ashley.jpg" alt="bojack"><br>
+            <h2>Bojack Horseface</h2>
+            <h4>C / RF / 2B</h4>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 pad">
+            <img src="img/ashley.jpg" alt="bojack"><br>
+            <h2>Bojack Horseface</h2>
+            <h4>C / RF / 2B</h4>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 pad">
+            <img src="img/adam.jpg" alt="moman"><br>
+            <h2>Moman</h2>
+            <h4>3B</h4>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 pad">
+            <img src="img/bruce.jpg" alt="bboy"><br>
+            <h2>BBoy</h2>
+            <h4>P</h4>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 (SCHEDULE) -->
+
+    <section id="schedule">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 text-center header wow fadeIn" data-wow-delay="0.1s">
+            <h1>SCHEDULE</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 pad">
+            <table class="wow bounceIn" data-wow-delay="0.3s">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Field</th>
+                  <th>vs</th>
+                  <th>Address</th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>September 11, 2017</td>
+                  <td>6:00 PM</td>
+                  <td>Shouldice #10</td>
+                  <td>Pitch Please</td>
+                  <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_new">1515 Home Rd NW</a></td>
+                  <td>W 26 - 13</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>September 18, 2017</td>
+                  <td>6:00 PM</td>
+                  <td>Shouldice #5</td>
+                  <td>Tempura Batters</td>
+                  <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_new">1515 Home Rd NW</a></td>
+                  <td>L 7 - 14</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>September 18, 2017</td>
+                  <td>7:30 PM</td>
+                  <td>Shouldice #5</td>
+                  <td>Draught Picks</td>
+                  <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_new">1515 Home Rd NW</a></td>
+                  <td>L 8 - 28</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>September 25, 2017</td>
+                  <td>6:00 PM</td>
+                  <td>Shouldice #5</td>
+                  <td>Pitch Please</td>
+                  <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_NEW">1515 Home Rd NW</a></td>
+                  <td>L 15 - 24</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>October 16, 2017</td>
+                  <td>7:30 PM</td>
+                  <td>Shouldice #5</td>
+                  <td>Pitch Please</td>
+                  <td><a href="https://maps.google.ca/maps/ms?msid=213116220391341842200.0004bfc8d469e95c22987&msa=0&ll=51.073304,-114.167218&spn=0.005649,0.016512" target="_NEW">1515 Home Rd NW</a></td>
+                  <td>L 24 - 17</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 (STATS) -->
+
+    <section id="stats">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 text-center header wow fadeIn" data-wow-delay="0.1s">
+            <h1>STATS</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 (STANDINGS) -->
+
+    <section id="standings">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 text-center header wow fadeIn" data-wow-delay="0.1s">
+            <h1>STANDINGS</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 pad">
+            <table class="wow bounceIn" data-wow-delay="0.3s">
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <th>W</th>
+                  <th>L</th>
+                  <th>T</th>
+                  <th>PTS</th>
+                  <th>RS</th>
+                  <th>RA</th>
+                  <th>+/-</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Draught Picks</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>8</td>
+                  <td>122</td>
+                  <td>54</td>
+                  <td>68</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Tempura Batters</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>71</td>
+                  <td>90</td>
+                  <td>-19</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Lobstars</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>56</td>
+                  <td>79</td>
+                  <td>-23</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Tempura Batters</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>70</td>
+                  <td>96</td>
+                  <td>-26</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,60 +1,159 @@
-/*
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
-table {
+th, thead {
+  font-weight: 500;
+}
+
+/* SCHEDULE TABLE */
+
+#schedule table {
   width: 90vw;
   margin: 0 auto;
 }
 
-@media (max-width: 400px) {
-  td {
-    font-size: 10pt;
-  }
-}
-
 @media (max-width: 767px)  {
 
-  /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr {
+  #schedule table, thead, tbody, th, td, tr {
     display: block;
   }
 
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
+  #schedule thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
 
-  tr {
+  #schedule tr {
     padding-bottom: 20px;
     padding-top: 20px;
-    background: #BBFF44;
-    color: #000;
   }
 
-  td {
-    /* Behave  like a "row" */
+  #schedule td {
     border: 0;
     position: relative;
     padding-left: 35%;
+    width: 100%;
+    align-items: center;
   }
 
-  td:before {
-    /* Now like a table header */
+  #schedule td:before {
     position: absolute;
-    /* Top/left values mimic padding */
-    left: 10px;
-    width: 25%;
+    left: 0;
+    width: calc(35% - 10px);
+    width: -webkit-calc(35% - 10px);
+    width: -moz-calc(35% - 10px);
+    width: -o-calc(35% - 10px);
+    padding-right: 10px;
+    font-weight: 500;
   }
 
-  /* Label the data */
-  td:nth-of-type(1):before { content: "Date"; }
-  td:nth-of-type(2):before { content: "Time"; }
-  td:nth-of-type(3):before { content: "Field"; }
-  td:nth-of-type(4):before { content: "Vs"; }
-  td:nth-of-type(5):before { content: "Address"; }
-  td:nth-of-type(6):before { content: "Result"; }
+  #schedule td:nth-of-type(1):before {
+    content: "Date";
+    text-align: right;
+  }
+
+  #schedule td:nth-of-type(2):before {
+    content: "Time";
+    text-align: right;
+  }
+
+  #schedule td:nth-of-type(3):before {
+    content: "Field";
+    text-align: right;
+  }
+
+  #schedule td:nth-of-type(4):before {
+    content: "vs";
+    text-align: right;
+  }
+
+  #schedule td:nth-of-type(5):before {
+    content: "Address";
+    text-align: right;
+  }
+
+  #schedule td:nth-of-type(6):before {
+    content: "Result";
+    text-align: right;
+  }
+}
+
+/* STANDINGS TABLE */
+
+#standings table {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px)  {
+
+  #standings table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  #standings thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #standings tr {
+    padding: 5%;
+  }
+
+  #standings td {
+    border: 0;
+    position: relative;
+    padding-left: 50%;
+    width: 100%;
+  }
+
+  #standings td:before {
+    position: absolute;
+    left: 0;
+    width: calc(50% - 10px);
+    width: -webkit-calc(50% - 10px);
+    width: -moz-calc(50% - 10px);
+    width: -o-calc(50% - 10px);
+    padding-right: 10px;
+    font-weight: 500;
+  }
+
+  #standings td:nth-of-type(1):before {
+    content: "Team";
+    text-align: right;
+  }
+
+  #standings td:nth-of-type(2):before {
+    content: "W";
+    text-align: right;
+  }
+
+  #standings td:nth-of-type(3):before {
+    content: "L";
+    text-align: right;
+  }
+
+  #standings td:nth-of-type(4):before {
+    content: "T";
+    text-align: right;
+  }
+
+  #standings td:nth-of-type(5):before {
+    content: "PTS";
+    text-align: right;
+  }
+
+  #standings td:nth-of-type(6):before {
+    content: "RS";
+    text-align: right;
+  }
+
+  #standings td:nth-of-type(7):before {
+    content: "RA";
+    text-align: right;
+  }
+
+  #standings td:nth-of-type(8):before {
+    content: "+/-";
+    text-align: right;
+  }
 }
