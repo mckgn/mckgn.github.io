@@ -61,12 +61,12 @@ th, thead {
   }
 
   #schedule td:nth-of-type(4):before {
-    content: "vs";
+    content: "Address";
     text-align: right;
   }
 
   #schedule td:nth-of-type(5):before {
-    content: "Address";
+    content: "vs";
     text-align: right;
   }
 
