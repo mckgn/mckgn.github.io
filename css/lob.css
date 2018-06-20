@@ -6,16 +6,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
 
 html {
     height: 100%;
     width: 100%;
+    font-size: 16px;
 }
 
 body {
     font-family: 'Roboto';
-    font-size: 2em;
     font-weight: 100;
     color: #FFFFFF;
     color: rgba(255,255,255,1);
@@ -26,18 +27,25 @@ body {
 
 
 h1 {
-  font-family: 'Rock Salt';
-  font-size: 2em;
+  font-family: 'Shrikhand';
+  font-size: 3.5rem;
+}
+
+@media (max-width : 767px) {
+  h1 {
+    font-family: 'Shrikhand';
+    font-size: 2.8rem;
+  }
 }
 
 h2 {
   font-family: 'Rock Salt';
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 h4 {
   font-family: 'Roboto';
-  font-size: 1em;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
@@ -91,6 +99,7 @@ h4 {
   background: #C51342;
   background: rgba(197,19,66,1);
   padding-bottom: 50px;
+  font-size: 1.45em;
 }
 
 #schedule a, #schedule .sec a:visited {
@@ -116,6 +125,7 @@ h4 {
   padding-bottom: 50px;
   color: #212020;
   color: rgba(33,32,32,1);
+  font-size: 1.45em;
 }
 
 /* SECTION 5 (STANDINGS) */
@@ -125,4 +135,10 @@ h4 {
   background: #C51342;
   background: rgba(197,19,66,1);
   padding-bottom: 50px;
+  font-size: 1.45em;
 }
+
+@media (max-width : 767px) {
+  #standings, #stats, #schedule {
+    font-size: 1.2em;
+  }

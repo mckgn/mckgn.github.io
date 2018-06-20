@@ -1,7 +1,7 @@
 .navbar-lob {
     background: #FFFFFF;
     background: rgba(255,255,255,1);
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Shrikhand', sans-serif;
     font-weight: 300;
     color: #212020;
     color: rgba(33,32,32,1);
@@ -21,8 +21,8 @@
   padding-bottom: 0 !important;
   color: #212020;
   color: rgba(33,32,32,1);
-  font-size: 1.5em;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2.25em;
+  font-family: 'Shrikhand', sans-serif;
 }
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li > a:active {

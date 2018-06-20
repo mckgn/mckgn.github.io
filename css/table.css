@@ -22,8 +22,7 @@ th, thead {
   }
 
   #schedule tr {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 1.25em;
   }
 
   #schedule td {
@@ -78,6 +77,8 @@ th, thead {
 
 /* STANDINGS TABLE */
 
+/*  <576px || ≥576px || ≥768px || ≥992px || ≥1200px  */
+
 #standings table {
   width: 90vw;
   margin: 0 auto;
@@ -96,7 +97,7 @@ th, thead {
   }
 
   #standings tr {
-    padding: 5%;
+    padding: 1.25em;
   }
 
   #standings td {
@@ -178,7 +179,7 @@ th, thead {
   }
 
   #stats tr {
-    padding: 5%;
+    padding: 1.25em;
   }
 
   #stats td {
