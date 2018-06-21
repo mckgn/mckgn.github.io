@@ -12,32 +12,26 @@ th, thead {
 
   #schedule td:nth-of-type(1) {
     width: 10%;
-    font-size: 0.75em;
   }
 
   #schedule td:nth-of-type(2) {
     width: 10%;
-    font-size: 0.75em;
   }
 
   #schedule td:nth-of-type(3) {
     width: 21%;
-    font-size: 0.75em;
   }
 
   #schedule td:nth-of-type(4) {
     width: 25%;
-    font-size: 0.75em;
   }
 
   #schedule td:nth-of-type(5) {
     width: 23%;
-    font-size: 0.75em;
   }
 
   #schedule td:nth-of-type(6) {
     width: 11%;
-    font-size: 0.75em;
   }
 }
 
@@ -142,88 +136,6 @@ th, thead {
   width: 10%;
 }
 
-/*
-
-#standings table {
-  width: 90vw;
-  margin: 0 auto;
-}
-
-@media (max-width: 767px)  {
-
-  #standings table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  #standings thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  #standings tr {
-    padding: 1.25em;
-  }
-
-  #standings td {
-    border: 0;
-    position: relative;
-    padding-left: 50%;
-    width: 100%;
-  }
-
-  #standings td:before {
-    position: absolute;
-    left: 0;
-    width: calc(50% - 10px);
-    width: -webkit-calc(50% - 10px);
-    width: -moz-calc(50% - 10px);
-    width: -o-calc(50% - 10px);
-    padding-right: 10px;
-    font-weight: 500;
-  }
-
-  #standings td:nth-of-type(1):before {
-    content: "Team";
-    text-align: right;
-  }
-
-  #standings td:nth-of-type(2):before {
-    content: "W";
-    text-align: right;
-  }
-
-  #standings td:nth-of-type(3):before {
-    content: "L";
-    text-align: right;
-  }
-
-  #standings td:nth-of-type(4):before {
-    content: "T";
-    text-align: right;
-  }
-
-  #standings td:nth-of-type(5):before {
-    content: "PTS";
-    text-align: right;
-  }
-
-  #standings td:nth-of-type(6):before {
-    content: "RS";
-    text-align: right;
-  }
-
-  #standings td:nth-of-type(7):before {
-    content: "RA";
-    text-align: right;
-  }
-
-  #standings td:nth-of-type(8):before {
-    content: "+/-";
-    text-align: right;
-  }
-}
-
 /* STATS TABLE */
 
 #stats table {
@@ -254,73 +166,3 @@ th, thead {
 #stats td:nth-of-type(6) {
   width: 12%;
 }
-
-/*
-@media (max-width: 767px)  {
-  #stats table {
-    width: 90vw;
-  }
-
-  #stats table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  #stats thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  #stats tr {
-    padding: 1.25em;
-  }
-
-  #stats td {
-    border: 0;
-    position: relative;
-    padding-left: 50%;
-    width: 100%;
-  }
-
-  #stats td:before {
-    position: absolute;
-    left: 0;
-    width: calc(50% - 10px);
-    width: -webkit-calc(50% - 10px);
-    width: -moz-calc(50% - 10px);
-    width: -o-calc(50% - 10px);
-    padding-right: 10px;
-    font-weight: 500;
-  }
-
-  #stats td:nth-of-type(1):before {
-    content: "Player";
-    text-align: right;
-  }
-
-  #stats td:nth-of-type(2):before {
-    content: "G";
-    text-align: right;
-  }
-
-  #stats td:nth-of-type(3):before {
-    content: "AB";
-    text-align: right;
-  }
-
-  #stats td:nth-of-type(4):before {
-    content: "H";
-    text-align: right;
-  }
-
-  #stats td:nth-of-type(5):before {
-    content: "R";
-    text-align: right;
-  }
-
-  #stats td:nth-of-type(6):before {
-    content: "AVG";
-    text-align: right;
-  }
-}
- */

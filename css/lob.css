@@ -98,7 +98,7 @@ h4 {
   background: #C51342;
   background: rgba(197,19,66,1);
   padding-bottom: 50px;
-  font-size: 1.45em;
+  font-size: 1em;
 }
 
 #schedule a, #schedule .sec a:visited {
@@ -124,7 +124,7 @@ h4 {
   padding-bottom: 50px;
   color: #212020;
   color: rgba(33,32,32,1);
-  font-size: 1.45em;
+  font-size: 1.25em;
 }
 
 /* SECTION 5 (STANDINGS) */
@@ -134,7 +134,7 @@ h4 {
   background: #C51342;
   background: rgba(197,19,66,1);
   padding-bottom: 50px;
-  font-size: 1.45em;
+  font-size: 1.25em;
 }
 
 @media (max-width : 767px) {
