@@ -144,8 +144,7 @@ h4 {
   font-size: 1.25em;
 }
 
-
-/* SECTION 6 (HISTORY) */
+/* SECTION 6 (EVOLUTION) */
 
 #evolution {
   min-height: 50vh;
@@ -157,6 +156,18 @@ h4 {
 
 #evolution img {
   max-width: 90%;
+}
+
+/* SECTION 7 (HISTORY) */
+
+#history {
+  min-height: 50vh;
+  background: #FFFFFF;
+  background: rgba(255,255,255,1);
+  color: #212020;
+  color: rgba(33,32,32,1);
+  padding-bottom: 3.125rem;
+  font-size: 1.25em;
 }
 
 @media (max-width : 47.9375rem) {
