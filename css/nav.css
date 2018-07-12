@@ -105,5 +105,11 @@
     height: 3.125rem;
     margin: 0;
     overflow: hidden;
+    font-size: 1rem;
   }
 }
+
+@media (max-width : 74.9375rem) {
+  .navbar-nav {
+    font-size: 0.65rem;
+  }
