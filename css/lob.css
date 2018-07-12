@@ -44,6 +44,13 @@ h2 {
   font-size: 1.5rem;
 }
 
+@media (max-width : 47.9375rem) {
+  h2 {
+    font-family: 'Rock Salt';
+    font-size: 1rem;
+  }
+}
+
 h4 {
   font-family: 'Roboto';
   font-size: 1.2rem;
