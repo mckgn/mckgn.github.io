@@ -20,11 +20,12 @@
     <link rel="stylesheet" href="css/lob.css">
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/animated.css">
+    <!-- <link rel="stylesheet" href="css/pesticide.css"> -->
     <script type="text/javascript">
-        $(window).on('load', function () { // makes sure the whole site is loaded
+        $(window).on('load', function() { // makes sure the whole site is loaded
             $('#status').fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(350).fadeOut('slow');
-            $('body').delay(350).css({ overflow: 'visible' });
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
           });
     </script>
     <script src="js/wow.min.js"></script>
@@ -32,17 +33,20 @@
       new WOW().init();
     </script>
     <script type="text/javascript">
-      function scrollToDiv(divId)
-        {
-        $('html,body').animate(
-         {
-          scrollTop: $('#' + divId).offset().top - 75, // subtracts navbar height when scrolling
-        },
-       'slow');
-      }
+    function scroll_to_div(div_id)
+    {
+     $('html,body').animate(
+     {
+      scrollTop: $("#"+div_id).offset().top-75 // subtracts navbar height when scrolling
+     },
+     'slow');
+    }
     </script>
   </head>
   <body class="animated fadeIn">
+    <!-- <div id="preloader">
+	     <div id="status">&nbsp;</div>
+    </div> -->
 
     <!-- NAVIGATION BAR -->
 
@@ -55,16 +59,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#main" onclick="scrollToDiv('main')"><img class="navbar-logo animated fadeIn" alt="Lobstars"></a>
+          <a class="navbar-brand" href="#main" onclick="scroll_to_div('main')"><img class="navbar-logo animated fadeIn" alt="Lobstars"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#roster" onclick="scrollToDiv('roster')">Roster</a></li>
-            <li><a href="#schedule" onclick="scrollToDiv('schedule')">Schedule</a></li>
-            <li><a href="#stats" onclick="scrollToDiv('stats')">Stats</a></li>
-            <li><a href="#standings" onclick="scrollToDiv('standings')">Standings</a></li>
-            <li><a href="#evolution" onclick="scrollToDiv('evolution')">Logo Evolution</a></li>
-            <li><a href="#history" onclick="scrollToDiv('history')">Historical Stats</a></li>
+            <li><a href="#roster" onclick="scroll_to_div('roster')">Roster</a></li>
+            <li><a href="#schedule" onclick="scroll_to_div('schedule')">Schedule</a></li>
+            <li><a href="#stats" onclick="scroll_to_div('stats')">Stats</a></li>
+            <li><a href="#standings" onclick="scroll_to_div('standings')">Standings</a></li>
+            <li><a href="#evolution" onclick="scroll_to_div('evolution')">Logo Evolution</a></li>
+            <li><a href="#history" onclick="scroll_to_div('history')">Historical Stats</a></li>
           </ul>
         </div>
       </div>
@@ -982,11 +986,10 @@
       </div>
     </section>
 
-  <script>
-    $(document).ready(function () {
-      $('.navbar-nav li a').click(function (event) {
-        $('.navbar-collapse').collapse('hide');
-      });
+  <script>$(document).ready(function () {
+    $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+    });
     });
   </script>
   </body>
